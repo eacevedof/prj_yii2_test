@@ -106,3 +106,47 @@ INSTALANDO LA APLICACION AVANZADA
         No entiendo muy bien esta instalación. No hay un archivo index que reciba
         todas las peticiones.
         
+INSTALANDO LA APLICACION BASICA  
+
+    Dentro de /home/ubuntu/workspace
+    
+    PASO 1: Ejecuto
+    php /usr/local/bin/composer create-project yiisoft/yii2-app-basic basic
+    
+    RESULTADO
+    You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+    Installing yiisoft/yii2-app-basic (2.0.6)
+      - Installing yiisoft/yii2-app-basic (2.0.6)
+        Downloading: 100%         
+    
+    Created project in basic
+    Loading composer repositories with package information
+    Installing dependencies (including require-dev)
+    
+    ....
+    
+  - Installing yiisoft/yii2-gii (2.0.4)
+    Loading from cache
+
+  - Installing fzaninotto/faker (v1.5.0)
+    Loading from cache
+
+  - Installing yiisoft/yii2-faker (2.0.3)
+    Loading from cache
+
+    Writing lock file
+    Generating autoload files
+    > yii\composer\Installer::postCreateProject
+    chmod('runtime', 0777)...done.
+    chmod('web/assets', 0777)...done.
+    chmod('yii', 0755)...done.
+    
+    para verla en ejecucion:
+        https://prj-yii2-test-ioedu.c9users.io/basic/web/index.php
+        
+        la ruta fisica a index.php es:
+        workspace/
+            basic/
+                web/
+                    index.php
+                
