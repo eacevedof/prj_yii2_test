@@ -1,4 +1,6 @@
 # prj_yii2_test
+INSTALANDO YII2 EN C9.io
+
 Pruebas de: http://www.yiiframework.com/download/
 
 
@@ -27,4 +29,39 @@ TUTORIAL COMPOSER:
     /usr/local/bin/
     └── composer
     
+INSTALANDO PLUGIN CONVERSOR DE PAQUETES PARA COMPOSER "fxp/composer-asset-plugin:~1.1.1"
+    http://www.yiiframework.com/download/
+    
+    PASO 1: ejecuto
+    php /usr/local/bin/composer global require "fxp/composer-asset-plugin:~1.1.1"
+    
+    RESULTADO:
+    
+    You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+    Changed current directory to /home/ubuntu/.composer
+    You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+    ./composer.json has been created
+    Loading composer repositories with package information
+    Updating dependencies (including require-dev)
+    - Installing fxp/composer-asset-plugin (v1.1.1)
+    Downloading: 100%         
+    Writing lock file
+    Generating autoload files
+
+    tree /home/ubuntu/.composer
+        cache/
+            files/
+                fxp/
+                    composer-asset-plugin/
+                        daca454b94539a4e6d30937dfc6b817eceb03f28.zip
+            ...
+        composer.json
+        composer.lock
+        vendor/
+            autoload.php
+            composer/
+            fxp/
+                composer-asset-plugin/
+                ...
+                
     
