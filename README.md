@@ -22,6 +22,7 @@ Updating dependencies (including require-dev)
 
 la carpeta .composer esta en /home/ubuntu/
 y tiene esta estructura:
+
 .
 ├── cache
 │   ├── files
