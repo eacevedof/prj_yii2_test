@@ -64,4 +64,45 @@ INSTALANDO PLUGIN CONVERSOR DE PAQUETES PARA COMPOSER "fxp/composer-asset-plugin
                 composer-asset-plugin/
                 ...
                 
+INSTALANDO LA APLICACION AVANZADA 
+    http://www.yiiframework.com/download/
+    php composer.phar create-project yiisoft/yii2-app-advanced advanced 2.0.6
     
+    segun mi proyecto y la configuracion previa adapto la llamada al comando composer
+    
+    PASO 1: 
+    php /usr/local/bin/composer create-project yiisoft/yii2-app-advanced advanced
+    
+    You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
+    Installing yiisoft/yii2-app-advanced (2.0.6)
+      - Installing yiisoft/yii2-app-advanced (2.0.6)
+        Downloading: 100%         
+    
+    Created project in advanced
+    Loading composer repositories with package information
+    Installing dependencies (including require-dev)
+    Reading bower.json of bower-asset/jquery (1.11.1)
+    ...
+  - Installing fzaninotto/faker (v1.5.0)
+    Downloading: 100%         
+
+  - Installing yiisoft/yii2-faker (2.0.3)
+    Downloading: 100%         
+
+    Writing lock file
+    Generating autoload files    
+
+    crea una carpeta en /home/ubuntu/workspace/advanced
+        backend/
+        common/
+        console/
+        enviroments/
+        frontend/
+        tests/
+        vendor/
+        ...
+        
+    NOTA:
+        No entiendo muy bien esta instalación. No hay un archivo index que reciba
+        todas las peticiones.
+        
