@@ -43,7 +43,7 @@ INSTALANDO PLUGIN CONVERSOR DE PAQUETES PARA COMPOSER "fxp/composer-asset-plugin
     ./composer.json has been created
     Loading composer repositories with package information
     Updating dependencies (including require-dev)
-    - Installing fxp/composer-asset-plugin (v1.1.1)
+    Installing fxp/composer-asset-plugin (v1.1.1)
     Downloading: 100%         
     Writing lock file
     Generating autoload files
@@ -75,32 +75,34 @@ INSTALANDO LA APLICACION AVANZADA
     
     You are running composer with xdebug enabled. This has a major impact on runtime performance. See https://getcomposer.org/xdebug
     Installing yiisoft/yii2-app-advanced (2.0.6)
-      - Installing yiisoft/yii2-app-advanced (2.0.6)
-        Downloading: 100%         
+    Installing yiisoft/yii2-app-advanced (2.0.6)
+    Downloading: 100%         
     
     Created project in advanced
     Loading composer repositories with package information
     Installing dependencies (including require-dev)
     Reading bower.json of bower-asset/jquery (1.11.1)
     ...
-  - Installing fzaninotto/faker (v1.5.0)
+    
+    Installing fzaninotto/faker (v1.5.0)
     Downloading: 100%         
 
-  - Installing yiisoft/yii2-faker (2.0.3)
+    Installing yiisoft/yii2-faker (2.0.3)
     Downloading: 100%         
 
     Writing lock file
     Generating autoload files    
 
-    crea una carpeta en /home/ubuntu/workspace/advanced
-        backend/
-        common/
-        console/
-        enviroments/
-        frontend/
-        tests/
-        vendor/
-        ...
+    crea una carpeta en:
+        /home/ubuntu/workspace/advanced
+            backend/
+            common/
+            console/
+            enviroments/
+            frontend/
+            tests/
+            vendor/
+            ...
         
     NOTA:
         No entiendo muy bien esta instalación. No hay un archivo index que reciba
@@ -125,13 +127,13 @@ INSTALANDO LA APLICACION BASICA
     
     ....
     
-  - Installing yiisoft/yii2-gii (2.0.4)
+    Installing yiisoft/yii2-gii (2.0.4)
     Loading from cache
-
-  - Installing fzaninotto/faker (v1.5.0)
+    
+    Installing fzaninotto/faker (v1.5.0)
     Loading from cache
-
-  - Installing yiisoft/yii2-faker (2.0.3)
+    
+    Installing yiisoft/yii2-faker (2.0.3)
     Loading from cache
 
     Writing lock file
@@ -150,3 +152,37 @@ INSTALANDO LA APLICACION BASICA
                 web/
                     index.php
                 
+RESUMEN
+    Aunque parezca que van unidos, composer se debe instalar por separado en un entorno normal "no como aqui en c9" ya que
+    te crea un workspace para cada proyecto obligandote a repetir la instalación de composer en cada uno de ellos.
+    
+    Primero se instala composer, que no es más que bajarse el archivo composer.phar (archivo php) y ejecutarlo
+    este creara una carpeta ./composer a nivel global me imagino que es para llevar el historico de los paquetes
+    que se van importanto y los plugins que se le van añadiendo.
+    
+    Entre los plugins necesarios para YII2 que necesita composer es fxp/composer-asset-plugin:~1.1.1
+    es un tipo de helper que lo que hace es permitir la incorporacion de librerias css y js entre otras cosas
+    alojadas en repositorios npm y bower
+    
+    Se puede seleccionar la instalación AVANZADA (,,,yiisoft/yii2-app-advanced <cualquier nombre de la carpeta de destino>) 
+    o BÁSICA (...yiisoft/yii2-app-basic <cualquier nombre de la carpeta de destino>)
+    
+    No conseguí ponerla en ejecucion a la avanzada.
+    
+    Al ejecutar la instalación con composer sobre YII2 puede que necesite dependencias almacenadas en github
+    para esto es necesario crearse un token en www.github.com:
+    (tucuentadegithub>arribaderechaflechadedespliegue>settings>personal access tokens) ojo con esto que una vez
+    que la crees no aparecera más, asi que guardala.
+    
+    Cuando en c9 te pida que falta un token 0Auth solo pega este contenido y presiona intro.
+    Si da error empezaras a ver mensajes de invlidez del token y te lo volvera a pedir para la siguiente dependencia
+    En este caso opté por cancelar la instalacion y reinstalar todo nuevamente.
+    
+    Puedo ver que YII2 así como otros tantos frameworks concentran las peticiones en su archivo index.php
+    este se encuentra en la carpeta web, que entiendo deberia ser la carpeta virtual pública.
+    
+    
+    
+    
+    
+    
