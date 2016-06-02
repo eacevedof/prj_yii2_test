@@ -107,6 +107,9 @@ INSTALANDO LA APLICACION AVANZADA
     NOTA:
         No entiendo muy bien esta instalación. No hay un archivo index que reciba
         todas las peticiones.
+        02/06/2016 Me corrijo, existen 3 archivos index dos dentro de enviroments/ y uno en frontend/ que es la carpeta
+        pública, a donde apunte la dirección raiz, es decir http://localhost/.
+        Despues de configurar apache para que use esta carpeta se debe dar permisos a www-data:www-data ya que se necesitarán permisos de escritura en distintos subdirectorios de frontend. Uno de ellos es /runtime/logs/
         
 INSTALANDO LA APLICACION BASICA  
 
