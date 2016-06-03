@@ -14,10 +14,12 @@ TUTORIAL COMPOSER:
     
     0 directories, 0 files
     
-    PASO 2: Ejecuto 
+    PASO 2: Ejecuto  -sS -> indica modo silencio (-s) y modo show errors (-S)
     sudo curl -sS https://getcomposer.org/installer | php
     
-    PASO 3: 
+    PASO 3:  Un archivo .phar es una aplicación php empaquetada que se puede entender como una unidad usb con toda la app php en ella.
+    Al guardar nuestra app php en (...)/bin/ la hacemos de uso global por linea de comandos.
+    
     sudo mv composer.phar /usr/local/bin/composer
     chmod 7775 /usr/local/bin/composer 
 
@@ -167,7 +169,7 @@ RESUMEN
     es un tipo de helper que lo que hace es permitir la incorporacion de librerias css y js entre otras cosas
     alojadas en repositorios npm y bower
     
-    Se puede seleccionar la instalación AVANZADA (,,,yiisoft/yii2-app-advanced <cualquier nombre de la carpeta de destino>) 
+    Se puede seleccionar la instalación AVANZADA (...yiisoft/yii2-app-advanced <cualquier nombre de la carpeta de destino>) 
     o BÁSICA (...yiisoft/yii2-app-basic <cualquier nombre de la carpeta de destino>)
     
     No conseguí ponerla en ejecucion a la avanzada.
